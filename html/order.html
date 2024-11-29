@@ -16,47 +16,49 @@
         </nav>
     </header>
 
-    <h1>Заказать iPhone 13 Pro Max</h1>
+    <div>
+        <h1>Заказать iPhone 13 Pro Max</h1>
+    </div>
 
     <section>
-        <form action="http://localhost:8060/check_request_body" method="post">
+        <form action="https://webhook.site/31b7539b-6e92-49f3-b7bd-5689d2dd47a9" method="post">
             <div>
                 <label>
                     Имя
-                    <input type="text" name="name" requireds>
+                    <input type="text" name="name" required>
                 </label>
             </div>
             <br>
             <div>
                 <label>
                     Фамилия
-                    <input type="text" name="surname" requireds>
+                    <input type="text" name="surname" required>
                 </label>
             </div>
             <br>
             <div>
                 <label>
                     Телефон
-                    <select name="phone-code" requireds>
+                    <select name="phone-code" required>
                         <option value="375">+375</option>
                         <option value="7">+7</option>
                         <option value="380">+380</option>
                     </select>
-                    <input type="text" name="phone-number" minlength="10" maxlength="10" requireds>
+                    <input type="text" name="phone-number" required>
                 </label>
             </div>
             <br>
             <div>
                 <label>
                     Email
-                    <input type="email" name="email" requireds>
+                    <input type="email" name="email" required>
                 </label>
             </div>
             <br>
             <div>
                 <label>
                     Объем памяти
-                    <select>
+                    <select name="memory">
                         <option value="64">64</option>
                         <option value="256">256</option>
                         <option value="512">512</option>
@@ -68,11 +70,11 @@
                 Способ доставки
                 <br>
                 <label>
-                    <input type="radio" name="delivery-type" value="courier" checked requireds>Курьером
+                    <input type="radio" name="delivery-type" value="courier" checked required>Курьером
                 </label>
                 <br>
                 <label>
-                    <input type="radio" name="delivery-type" value="self" requireds>Самовывозом
+                    <input type="radio" name="delivery-type" value="self" required>Самовывоз
                 </label>
             </div>
             <br>
@@ -93,15 +95,17 @@
             </div>
             <br>
             <div>
-                Комментарий к заказу
-                <br>
-                <textarea name="comments" cols="40" rows="10"></textarea>
+                <label>
+                    Комментарий к заказу
+                    <br>
+                    <textarea name="comments" cols="40" rows="10"></textarea>
+                </label>
             </div>
             <br>
             <div>
                 <label>
-                    <input type="checkbox" name="agreement" value="1" requireds>
-                    Принимаю <a href="#">условия сайта</a>
+                    <input type="checkbox" name="agreement" value="1" required>
+                    Принимаю <a href="https://ru.wikipedia.org/" target="_blank">условия сайта</a>
                 </label>
             </div>
             <br>
